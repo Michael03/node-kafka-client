@@ -1,0 +1,24 @@
+request
+/* Write request header, will be updated later. */
+/* Length: updated later */
+rd_kafka_buf_write_i32(rkbuf, 0);
+/* ApiKey */
+rd_kafka_buf_write_i16(rkbuf, rkbuf->rkbuf_reqhdr.ApiKey);
+/* ApiVersion: updated later */
+rd_kafka_buf_write_i16(rkbuf, 0);
+/* CorrId: updated later */
+rd_kafka_buf_write_i32(rkbuf, 0);
+
+docker run --net=host -it -v `pwd`:/code docker.artifactory.euw.platformservices.io/docker-bet-uk/betdev-node10:2 node /code/index.js
+
+Request Header v1 => request_api_key request_api_version correlation_id client_id 
+  request_api_key => INT16
+  request_api_version => INT16
+  correlation_id => INT32
+  client_id => NULLABLE_STRING = i16
+
+size = i32
+apikey = 18 for ApiVersion
+apiVersion = 3
+correlation_id = 1234
+client_id = -1 i16
