@@ -22,3 +22,25 @@ apikey = 18 for ApiVersion
 apiVersion = 3
 correlation_id = 1234
 client_id = -1 i16
+tagged = 0
+
+   api version request v3 [ 0, 0, 0, 16, 0, 18, 0, 3, 0, 0, 48, 54, 255, 255, 0, 2, 97, 2, 97, 0 ] }
+
+
+Set up kubernetes 2 weeks 1 person m
+SIF ingestor   - 3 weeks   m
+CO Price Feed  - 3-4 weeks m
+Scoreboards    - 4 weeks   l
+BDM            - 3 weeks   h
+internal api   - 6 weeks   l
+external api   - 3 weeks   m
+redis clean up - 1 week    h
+frontend       - 12 weeks
+bet reader -> 2 weeks
+
+
+Kotlin +4 weeks
+
+
+
+   [ 0, 0, 0, 16, 0, 18, 0, 3, 0, 0, 48, 54, 255, 255, 0, 2, 97, 2, 97, 0 ] }
